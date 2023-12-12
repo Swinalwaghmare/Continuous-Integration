@@ -13,3 +13,14 @@ ax.set_title("Fruits supply by kind and color")
 ax.legend(title='Fruit Color')
 
 plt.savefig('bars.png', bbox_inches='tight')
+
+cat = ["bored", "happy", "happy", "happy", "happy", "bored"]
+dog = ["bored", "bored", "bored", "happy", "bored", "bored"]
+activity = ["combing", "drinking", "feeding", "napping", "playing", "washing"]
+
+fig, ax = plt.subplots()
+ax.plot(activity, dog, label="dog")
+ax.plot(activity, cat, label="cat")
+ax.legend()
+
+plt.savefig('lines.png', bbox_inches='tight')
